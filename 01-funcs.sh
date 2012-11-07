@@ -1,3 +1,5 @@
+
+# find a class by pattern in jar(s)
 jargrep() {
     if [ $# -lt 2 ]; then
 	echo "jargrep <parttern> <jar file> [jar file] ..."
@@ -17,6 +19,7 @@ jargrep() {
     done
 }
 
+# add "#sshto" to your /etc/hosts files and use sshto command to get a ssh login menu
 sshto() {
         cat /etc/hosts | grep "sshto" | awk '{ print "["NR"]", $1" ("$2")" }'
         echo -n "you want to ssh to: "; read -r choice
@@ -45,7 +48,7 @@ sshto() {
         fi
 }
 
-
+# if you use openvpn and have multiple vpn configs, use this to switch between them
 switch_vpn() {
     choices=( $(cd /etc/openvpn; ls *.off) )
     seq=1
