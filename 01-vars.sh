@@ -1,8 +1,13 @@
-# My customized variables
+###########################
+# My Customized Variables #
+###########################
 
+# Default editor
 export EDITOR=vim
 
-export HADOOP_HOME=$HOME/testbed/hadoop
-export HBASE_HOME=$HOME/testbed/hbase
-export HUGETABLE_HOME=$HOME/testbed/hugetable
+# Dev things
+export TESTBED=$HOME/testbed
+export HADOOP_HOME=$TESTBED/hadoop
+export HBASE_HOME=$TESTBED/hbase
+export HUGETABLE_HOME=$TESTBED/hugetable
 export PATH=$HUGETABLE_HOME/bin:$HADOOP_HOME/bin:$HBASE_HOME/bin:$PATH
